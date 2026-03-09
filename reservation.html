@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Global Flavors</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">🍜 Global Flavors</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Food Gallery</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form class="reservation-form" id="reservationForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time *</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select Time</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests *</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Select Guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6+ Guests</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Special Request</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Any special dietary requirements or requests..."></textarea>
+                </div>
+                <button type="submit" class="btn">Make Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="YouTube">📺</a>
+            </div>
+            <p>&copy; 2024 Global Flavors. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

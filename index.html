@@ -1,153 +1,82 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Group Idea Board</title>
-
-<style>
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    margin: 0;
-    padding: 20px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.container {
-    background: white;
-    width: 100%;
-    max-width: 600px;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-    font-size: 2em;
-    font-weight: 300;
-}
-
-.ideas-list {
-    margin-bottom: 30px;
-}
-
-.ideas-list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.idea-item {
-    background: #f8f9fa;
-    border: 1px solid #e9ecef;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.idea-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.idea-item strong {
-    color: #495057;
-    font-size: 1.1em;
-    display: block;
-    margin-bottom: 8px;
-}
-
-.idea-author {
-    color: #6c757d;
-    font-size: 0.9em;
-    font-style: italic;
-}
-
-.add-idea-form {
-    background: #f8f9fa;
-    border-radius: 10px;
-    padding: 25px;
-    border: 1px solid #e9ecef;
-}
-
-input {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 15px;
-    border: 2px solid #e9ecef;
-    border-radius: 8px;
-    font-size: 1em;
-    transition: border-color 0.3s ease;
-    box-sizing: border-box;
-}
-
-input:focus {
-    outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-}
-
-button {
-    width: 100%;
-    padding: 12px 15px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1em;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-}
-
-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-}
-
-button:active {
-    transform: translateY(0);
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Flavors - Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+    <header>
+        <nav class="container">
+            <div class="logo">🍜 Global Flavors</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Food Gallery</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="container">
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Global Flavors</h1>
+            <p>Experience the best cuisines from around the world in one place</p>
+            <a href="menu.html" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
 
-<h2>Group Idea Board</h2>
+    <section class="about">
+        <div class="container">
+            <h2>About Our Restaurant</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Global Flavors is a culinary journey that brings together the rich traditions and flavors of Chinese, Italian, Indian, and Sri Lankan cuisines. Our expert chefs use authentic ingredients and time-honored techniques to create dishes that transport you to different corners of the world.</p>
+                    <p>Whether you're craving the spicy kick of Indian curries, the delicate flavors of Italian pasta, the bold tastes of Chinese stir-fries, or the aromatic spices of Sri Lankan dishes, we have something to satisfy every palate.</p>
+                </div>
+                <div class="about-image"></div>
+            </div>
+        </div>
+    </section>
 
-<div class="ideas-list">
-<ul>
-<li class="idea-item">
-<strong>Create a study planner</strong><br>
-<span class="idea-author">Suggested by Nimal</span>
-</li>
-</ul>
-</div>
+    <section class="featured-foods">
+        <div class="container">
+            <h2>Featured Cuisines</h2>
+            <div class="foods-grid">
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Chinese Food">
+                    <h3>🍜 Chinese Cuisine</h3>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Italian Food">
+                    <h3>🍝 Italian Cuisine</h3>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Indian Food">
+                    <h3>🍛 Indian Cuisine</h3>
+                </div>
+                <div class="food-card">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sri Lankan Food">
+                    <h3>🥥 Sri Lankan Cuisine</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="add-idea-form">
-<input type="text" placeholder="Enter your idea">
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="YouTube">📺</a>
+            </div>
+            <p>&copy; 2024 Global Flavors. All rights reserved.</p>
+        </div>
+    </footer>
 
-<input type="text" placeholder="Your name">
-
-<button>Add Idea</button>
-</div>
-
-</div>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
